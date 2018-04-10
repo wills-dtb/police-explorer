@@ -1,0 +1,809 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		004C13622075F8CD00BA41C9 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004C13542075F8CD00BA41C9 /* NetworkClient.swift */; };
+		004C13632075F8CD00BA41C9 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004C13552075F8CD00BA41C9 /* NetworkError.swift */; };
+		004C13642075F8CD00BA41C9 /* RequestTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004C13562075F8CD00BA41C9 /* RequestTransformer.swift */; };
+		004C13652075F8CD00BA41C9 /* AuthorizeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004C13582075F8CD00BA41C9 /* AuthorizeRequest.swift */; };
+		004C13662075F8CD00BA41C9 /* EncodeURLParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004C13592075F8CD00BA41C9 /* EncodeURLParameters.swift */; };
+		004C13672075F8CD00BA41C9 /* AddAcceptHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004C135A2075F8CD00BA41C9 /* AddAcceptHeader.swift */; };
+		004C13682075F8CD00BA41C9 /* ResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004C135B2075F8CD00BA41C9 /* ResponseHandler.swift */; };
+		004C13692075F8CD00BA41C9 /* JSONResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004C135D2075F8CD00BA41C9 /* JSONResponseHandler.swift */; };
+		004C136A2075F8CD00BA41C9 /* Clients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004C135E2075F8CD00BA41C9 /* Clients.swift */; };
+		00E309C92075FFB9004B8193 /* PoliceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E309C82075FFB9004B8193 /* PoliceAPI.swift */; };
+		00E309CB20760014004B8193 /* StreetLevelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E309CA20760014004B8193 /* StreetLevelAPI.swift */; };
+		00E309E1207605EE004B8193 /* Police_Explorer_UI_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E309E0207605EE004B8193 /* Police_Explorer_UI_Tests.swift */; };
+		00E309F120760654004B8193 /* ResponseHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E309EB20760654004B8193 /* ResponseHandlerTests.swift */; };
+		00E309F220760654004B8193 /* AddAcceptHeaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E309ED20760654004B8193 /* AddAcceptHeaderTests.swift */; };
+		00E309F320760654004B8193 /* EncodeURLParametersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E309EE20760654004B8193 /* EncodeURLParametersTests.swift */; };
+		00E309F420760654004B8193 /* AuthorizeRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E309EF20760654004B8193 /* AuthorizeRequestTests.swift */; };
+		931AA1332075624700D51A17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AA1322075624700D51A17 /* AppDelegate.swift */; };
+		931AA13A2075624800D51A17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 931AA1392075624800D51A17 /* Assets.xcassets */; };
+		931AA13D2075624800D51A17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 931AA13B2075624800D51A17 /* LaunchScreen.storyboard */; };
+		931AA14D2075648300D51A17 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AA14C2075648300D51A17 /* MapViewController.swift */; };
+		931AA14F207564A600D51A17 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AA14E207564A600D51A17 /* BaseViewController.swift */; };
+		931AA151207564AE00D51A17 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AA150207564AE00D51A17 /* BaseView.swift */; };
+		931AA1532075657700D51A17 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AA1522075657700D51A17 /* MapView.swift */; };
+		931AA156207566D900D51A17 /* Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AA155207566D900D51A17 /* Accessibility.swift */; };
+		931AA1582075699000D51A17 /* CrimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AA1572075699000D51A17 /* CrimeTableViewController.swift */; };
+		931AA15A20756AC000D51A17 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AA15920756AC000D51A17 /* MainViewController.swift */; };
+		931AA15C20756AD200D51A17 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AA15B20756AD200D51A17 /* MainView.swift */; };
+		931AA15E2075785A00D51A17 /* StreetCrime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AA15D2075785A00D51A17 /* StreetCrime.swift */; };
+		B6D1645D3D5032B5680AB23C /* Pods_Police_Explorer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89160D8DDEE5987E222DBEDB /* Pods_Police_Explorer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E309D5207605E1004B8193 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 931AA1272075624700D51A17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 931AA12E2075624700D51A17;
+			remoteInfo = "Police Explorer";
+		};
+		00E309E3207605EE004B8193 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 931AA1272075624700D51A17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 931AA12E2075624700D51A17;
+			remoteInfo = "Police Explorer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		004C13542075F8CD00BA41C9 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		004C13552075F8CD00BA41C9 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		004C13562075F8CD00BA41C9 /* RequestTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestTransformer.swift; sourceTree = "<group>"; };
+		004C13582075F8CD00BA41C9 /* AuthorizeRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizeRequest.swift; sourceTree = "<group>"; };
+		004C13592075F8CD00BA41C9 /* EncodeURLParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodeURLParameters.swift; sourceTree = "<group>"; };
+		004C135A2075F8CD00BA41C9 /* AddAcceptHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAcceptHeader.swift; sourceTree = "<group>"; };
+		004C135B2075F8CD00BA41C9 /* ResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseHandler.swift; sourceTree = "<group>"; };
+		004C135D2075F8CD00BA41C9 /* JSONResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONResponseHandler.swift; sourceTree = "<group>"; };
+		004C135E2075F8CD00BA41C9 /* Clients.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clients.swift; sourceTree = "<group>"; };
+		00E309C82075FFB9004B8193 /* PoliceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliceAPI.swift; sourceTree = "<group>"; };
+		00E309CA20760014004B8193 /* StreetLevelAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetLevelAPI.swift; sourceTree = "<group>"; };
+		00E309D0207605E1004B8193 /* Police Explorer Unit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Police Explorer Unit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E309D4207605E1004B8193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E309DE207605EE004B8193 /* Police Explorer UI Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Police Explorer UI Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E309E0207605EE004B8193 /* Police_Explorer_UI_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Police_Explorer_UI_Tests.swift; sourceTree = "<group>"; };
+		00E309E2207605EE004B8193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E309EB20760654004B8193 /* ResponseHandlerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseHandlerTests.swift; sourceTree = "<group>"; };
+		00E309ED20760654004B8193 /* AddAcceptHeaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAcceptHeaderTests.swift; sourceTree = "<group>"; };
+		00E309EE20760654004B8193 /* EncodeURLParametersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodeURLParametersTests.swift; sourceTree = "<group>"; };
+		00E309EF20760654004B8193 /* AuthorizeRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizeRequestTests.swift; sourceTree = "<group>"; };
+		0AA3163D08DFB2D41D5F1B29 /* Pods-Police Explorer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Police Explorer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Police Explorer/Pods-Police Explorer.debug.xcconfig"; sourceTree = "<group>"; };
+		83651594CEACBB140267773B /* Pods-Police Explorer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Police Explorer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Police Explorer/Pods-Police Explorer.release.xcconfig"; sourceTree = "<group>"; };
+		89160D8DDEE5987E222DBEDB /* Pods_Police_Explorer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Police_Explorer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		931AA12F2075624700D51A17 /* Police Explorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Police Explorer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		931AA1322075624700D51A17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		931AA1392075624800D51A17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		931AA13C2075624800D51A17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		931AA13E2075624800D51A17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		931AA14C2075648300D51A17 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		931AA14E207564A600D51A17 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		931AA150207564AE00D51A17 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		931AA1522075657700D51A17 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		931AA155207566D900D51A17 /* Accessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accessibility.swift; sourceTree = "<group>"; };
+		931AA1572075699000D51A17 /* CrimeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrimeTableViewController.swift; sourceTree = "<group>"; };
+		931AA15920756AC000D51A17 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		931AA15B20756AD200D51A17 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		931AA15D2075785A00D51A17 /* StreetCrime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetCrime.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E309CD207605E1004B8193 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E309DB207605EE004B8193 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		931AA12C2075624700D51A17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D1645D3D5032B5680AB23C /* Pods_Police_Explorer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		004C13572075F8CD00BA41C9 /* RequestTransformers */ = {
+			isa = PBXGroup;
+			children = (
+				004C13582075F8CD00BA41C9 /* AuthorizeRequest.swift */,
+				004C13592075F8CD00BA41C9 /* EncodeURLParameters.swift */,
+				004C135A2075F8CD00BA41C9 /* AddAcceptHeader.swift */,
+			);
+			path = RequestTransformers;
+			sourceTree = "<group>";
+		};
+		004C135C2075F8CD00BA41C9 /* ResponseHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				004C135D2075F8CD00BA41C9 /* JSONResponseHandler.swift */,
+			);
+			path = ResponseHandlers;
+			sourceTree = "<group>";
+		};
+		00E309C72075FF9F004B8193 /* PoliceAPI */ = {
+			isa = PBXGroup;
+			children = (
+				00E309C82075FFB9004B8193 /* PoliceAPI.swift */,
+				00E309CA20760014004B8193 /* StreetLevelAPI.swift */,
+			);
+			path = PoliceAPI;
+			sourceTree = "<group>";
+		};
+		00E309D1207605E1004B8193 /* Police Explorer Unit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				00E309E820760654004B8193 /* Networking */,
+				00E309D4207605E1004B8193 /* Info.plist */,
+			);
+			path = "Police Explorer Unit Tests";
+			sourceTree = "<group>";
+		};
+		00E309DF207605EE004B8193 /* Police Explorer UI Tests */ = {
+			isa = PBXGroup;
+			children = (
+				00E309E0207605EE004B8193 /* Police_Explorer_UI_Tests.swift */,
+				00E309E2207605EE004B8193 /* Info.plist */,
+			);
+			path = "Police Explorer UI Tests";
+			sourceTree = "<group>";
+		};
+		00E309E820760654004B8193 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				00E309EC20760654004B8193 /* RequestTransformers */,
+				00E309E920760654004B8193 /* ResponseHandlers */,
+				00E309EB20760654004B8193 /* ResponseHandlerTests.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		00E309E920760654004B8193 /* ResponseHandlers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ResponseHandlers;
+			sourceTree = "<group>";
+		};
+		00E309EC20760654004B8193 /* RequestTransformers */ = {
+			isa = PBXGroup;
+			children = (
+				00E309ED20760654004B8193 /* AddAcceptHeaderTests.swift */,
+				00E309EE20760654004B8193 /* EncodeURLParametersTests.swift */,
+				00E309EF20760654004B8193 /* AuthorizeRequestTests.swift */,
+			);
+			path = RequestTransformers;
+			sourceTree = "<group>";
+		};
+		0C107BA9CAA452EF575A3906 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0AA3163D08DFB2D41D5F1B29 /* Pods-Police Explorer.debug.xcconfig */,
+				83651594CEACBB140267773B /* Pods-Police Explorer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		931AA1262075624700D51A17 = {
+			isa = PBXGroup;
+			children = (
+				931AA1312075624700D51A17 /* Police Explorer */,
+				00E309D1207605E1004B8193 /* Police Explorer Unit Tests */,
+				00E309DF207605EE004B8193 /* Police Explorer UI Tests */,
+				931AA1302075624700D51A17 /* Products */,
+				0C107BA9CAA452EF575A3906 /* Pods */,
+				AA09665F1F7105223CBC4E22 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		931AA1302075624700D51A17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				931AA12F2075624700D51A17 /* Police Explorer.app */,
+				00E309D0207605E1004B8193 /* Police Explorer Unit Tests.xctest */,
+				00E309DE207605EE004B8193 /* Police Explorer UI Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		931AA1312075624700D51A17 /* Police Explorer */ = {
+			isa = PBXGroup;
+			children = (
+				931AA154207566D000D51A17 /* Constants */,
+				931AA146207563E300D51A17 /* Controller */,
+				931AA144207563E300D51A17 /* Model */,
+				931AA145207563E300D51A17 /* Networking */,
+				931AA148207563E300D51A17 /* View */,
+				931AA1322075624700D51A17 /* AppDelegate.swift */,
+				931AA1392075624800D51A17 /* Assets.xcassets */,
+				931AA13B2075624800D51A17 /* LaunchScreen.storyboard */,
+				931AA13E2075624800D51A17 /* Info.plist */,
+			);
+			path = "Police Explorer";
+			sourceTree = "<group>";
+		};
+		931AA144207563E300D51A17 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				931AA15D2075785A00D51A17 /* StreetCrime.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		931AA145207563E300D51A17 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				00E309C72075FF9F004B8193 /* PoliceAPI */,
+				004C13572075F8CD00BA41C9 /* RequestTransformers */,
+				004C135C2075F8CD00BA41C9 /* ResponseHandlers */,
+				004C135E2075F8CD00BA41C9 /* Clients.swift */,
+				004C13542075F8CD00BA41C9 /* NetworkClient.swift */,
+				004C13552075F8CD00BA41C9 /* NetworkError.swift */,
+				004C13562075F8CD00BA41C9 /* RequestTransformer.swift */,
+				004C135B2075F8CD00BA41C9 /* ResponseHandler.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		931AA146207563E300D51A17 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				931AA14E207564A600D51A17 /* BaseViewController.swift */,
+				931AA1572075699000D51A17 /* CrimeTableViewController.swift */,
+				931AA15920756AC000D51A17 /* MainViewController.swift */,
+				931AA14C2075648300D51A17 /* MapViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		931AA148207563E300D51A17 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				931AA150207564AE00D51A17 /* BaseView.swift */,
+				931AA15B20756AD200D51A17 /* MainView.swift */,
+				931AA1522075657700D51A17 /* MapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		931AA154207566D000D51A17 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				931AA155207566D900D51A17 /* Accessibility.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		AA09665F1F7105223CBC4E22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89160D8DDEE5987E222DBEDB /* Pods_Police_Explorer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E309CF207605E1004B8193 /* Police Explorer Unit Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E309D7207605E1004B8193 /* Build configuration list for PBXNativeTarget "Police Explorer Unit Tests" */;
+			buildPhases = (
+				00E309CC207605E1004B8193 /* Sources */,
+				00E309CD207605E1004B8193 /* Frameworks */,
+				00E309CE207605E1004B8193 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E309D6207605E1004B8193 /* PBXTargetDependency */,
+			);
+			name = "Police Explorer Unit Tests";
+			productName = "Police Explorer Unit Tests";
+			productReference = 00E309D0207605E1004B8193 /* Police Explorer Unit Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00E309DD207605EE004B8193 /* Police Explorer UI Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E309E5207605EE004B8193 /* Build configuration list for PBXNativeTarget "Police Explorer UI Tests" */;
+			buildPhases = (
+				00E309DA207605EE004B8193 /* Sources */,
+				00E309DB207605EE004B8193 /* Frameworks */,
+				00E309DC207605EE004B8193 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E309E4207605EE004B8193 /* PBXTargetDependency */,
+			);
+			name = "Police Explorer UI Tests";
+			productName = "Police Explorer UI Tests";
+			productReference = 00E309DE207605EE004B8193 /* Police Explorer UI Tests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		931AA12E2075624700D51A17 /* Police Explorer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 931AA1412075624800D51A17 /* Build configuration list for PBXNativeTarget "Police Explorer" */;
+			buildPhases = (
+				62CCBF5FBE320CCFE08C668D /* [CP] Check Pods Manifest.lock */,
+				931AA12B2075624700D51A17 /* Sources */,
+				931AA12C2075624700D51A17 /* Frameworks */,
+				931AA12D2075624700D51A17 /* Resources */,
+				5439DA65111A0C3D044BAF13 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Police Explorer";
+			productName = "Police Explorer";
+			productReference = 931AA12F2075624700D51A17 /* Police Explorer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		931AA1272075624700D51A17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					00E309CF207605E1004B8193 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 931AA12E2075624700D51A17;
+					};
+					00E309DD207605EE004B8193 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 931AA12E2075624700D51A17;
+					};
+					931AA12E2075624700D51A17 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 931AA12A2075624700D51A17 /* Build configuration list for PBXProject "Police Explorer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 931AA1262075624700D51A17;
+			productRefGroup = 931AA1302075624700D51A17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				931AA12E2075624700D51A17 /* Police Explorer */,
+				00E309CF207605E1004B8193 /* Police Explorer Unit Tests */,
+				00E309DD207605EE004B8193 /* Police Explorer UI Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E309CE207605E1004B8193 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E309DC207605EE004B8193 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		931AA12D2075624700D51A17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				931AA13D2075624800D51A17 /* LaunchScreen.storyboard in Resources */,
+				931AA13A2075624800D51A17 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5439DA65111A0C3D044BAF13 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Police Explorer/Pods-Police Explorer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Police Explorer/Pods-Police Explorer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62CCBF5FBE320CCFE08C668D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Police Explorer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E309CC207605E1004B8193 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E309F320760654004B8193 /* EncodeURLParametersTests.swift in Sources */,
+				00E309F120760654004B8193 /* ResponseHandlerTests.swift in Sources */,
+				00E309F420760654004B8193 /* AuthorizeRequestTests.swift in Sources */,
+				00E309F220760654004B8193 /* AddAcceptHeaderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E309DA207605EE004B8193 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E309E1207605EE004B8193 /* Police_Explorer_UI_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		931AA12B2075624700D51A17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E309CB20760014004B8193 /* StreetLevelAPI.swift in Sources */,
+				004C13632075F8CD00BA41C9 /* NetworkError.swift in Sources */,
+				00E309C92075FFB9004B8193 /* PoliceAPI.swift in Sources */,
+				004C13662075F8CD00BA41C9 /* EncodeURLParameters.swift in Sources */,
+				004C136A2075F8CD00BA41C9 /* Clients.swift in Sources */,
+				004C13682075F8CD00BA41C9 /* ResponseHandler.swift in Sources */,
+				004C13652075F8CD00BA41C9 /* AuthorizeRequest.swift in Sources */,
+				931AA1532075657700D51A17 /* MapView.swift in Sources */,
+				931AA14F207564A600D51A17 /* BaseViewController.swift in Sources */,
+				931AA1332075624700D51A17 /* AppDelegate.swift in Sources */,
+				004C13642075F8CD00BA41C9 /* RequestTransformer.swift in Sources */,
+				931AA15C20756AD200D51A17 /* MainView.swift in Sources */,
+				004C13622075F8CD00BA41C9 /* NetworkClient.swift in Sources */,
+				004C13692075F8CD00BA41C9 /* JSONResponseHandler.swift in Sources */,
+				004C13672075F8CD00BA41C9 /* AddAcceptHeader.swift in Sources */,
+				931AA151207564AE00D51A17 /* BaseView.swift in Sources */,
+				931AA1582075699000D51A17 /* CrimeTableViewController.swift in Sources */,
+				931AA15A20756AC000D51A17 /* MainViewController.swift in Sources */,
+				931AA15E2075785A00D51A17 /* StreetCrime.swift in Sources */,
+				931AA156207566D900D51A17 /* Accessibility.swift in Sources */,
+				931AA14D2075648300D51A17 /* MapViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E309D6207605E1004B8193 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 931AA12E2075624700D51A17 /* Police Explorer */;
+			targetProxy = 00E309D5207605E1004B8193 /* PBXContainerItemProxy */;
+		};
+		00E309E4207605EE004B8193 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 931AA12E2075624700D51A17 /* Police Explorer */;
+			targetProxy = 00E309E3207605EE004B8193 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		931AA13B2075624800D51A17 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				931AA13C2075624800D51A17 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00E309D8207605E1004B8193 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Police Explorer Unit Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ustwo.Police-Explorer-Unit-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Police Explorer.app/Police Explorer";
+			};
+			name = Debug;
+		};
+		00E309D9207605E1004B8193 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Police Explorer Unit Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ustwo.Police-Explorer-Unit-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Police Explorer.app/Police Explorer";
+			};
+			name = Release;
+		};
+		00E309E6207605EE004B8193 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Police Explorer UI Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ustwo.Police-Explorer-UI-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Police Explorer";
+			};
+			name = Debug;
+		};
+		00E309E7207605EE004B8193 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Police Explorer UI Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ustwo.Police-Explorer-UI-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Police Explorer";
+			};
+			name = Release;
+		};
+		931AA13F2075624800D51A17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		931AA1402075624800D51A17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		931AA1422075624800D51A17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AA3163D08DFB2D41D5F1B29 /* Pods-Police Explorer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Police Explorer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.foobar.Police-Explorer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		931AA1432075624800D51A17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83651594CEACBB140267773B /* Pods-Police Explorer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Police Explorer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.foobar.Police-Explorer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E309D7207605E1004B8193 /* Build configuration list for PBXNativeTarget "Police Explorer Unit Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E309D8207605E1004B8193 /* Debug */,
+				00E309D9207605E1004B8193 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00E309E5207605EE004B8193 /* Build configuration list for PBXNativeTarget "Police Explorer UI Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E309E6207605EE004B8193 /* Debug */,
+				00E309E7207605EE004B8193 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		931AA12A2075624700D51A17 /* Build configuration list for PBXProject "Police Explorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				931AA13F2075624800D51A17 /* Debug */,
+				931AA1402075624800D51A17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		931AA1412075624800D51A17 /* Build configuration list for PBXNativeTarget "Police Explorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				931AA1422075624800D51A17 /* Debug */,
+				931AA1432075624800D51A17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 931AA1272075624700D51A17 /* Project object */;
+}
