@@ -20,6 +20,34 @@
                ReferencedContainer = "container:Police Explorer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "00E309CF207605E1004B8193"
+               BuildableName = "Police Explorer Unit Tests.xctest"
+               BlueprintName = "Police Explorer Unit Tests"
+               ReferencedContainer = "container:Police Explorer.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "00E309DD207605EE004B8193"
+               BuildableName = "Police Explorer UI Tests.xctest"
+               BlueprintName = "Police Explorer UI Tests"
+               ReferencedContainer = "container:Police Explorer.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

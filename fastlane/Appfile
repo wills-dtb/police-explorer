@@ -1,0 +1,6 @@
+app_identifier("com.foobar.Police-Explorer") # The bundle identifier of your app
+apple_id("williamdtb@ustwo.com") # Your Apple email address
+
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile
