@@ -17,6 +17,10 @@ Be sure to use the `Police Explorer.xcworkspace` and not the project file when o
 
 ## Testing
 
+### Unit tests
+
+These can be run locally from the IDE with shortcut key `Command + U`. Alternatively, this can be run by fastlane too with `fastlane tests` from the CLI when inside the project
+
 ## License
 
 See [License](./LICENSE.md) and [Notice](./NOTICE.md).
