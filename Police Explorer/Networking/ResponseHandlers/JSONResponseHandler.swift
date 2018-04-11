@@ -56,7 +56,7 @@ final class JSONResponseHandler: ResponseHandler {
     /// - Returns: If success, returns the deserialized model. Otherwise, returns a `NetworkError`.
     func deserializeJSON<Output: Codable>(data: Data) -> Result<Output, NetworkError> {
         do {
-            print(String(data: data, encoding: String.Encoding.utf8))
+            print(String(data: data, encoding: String.Encoding.utf8) ?? "")
 
             let result = try JSONDecoder().decode(Output.self, from: data)
 

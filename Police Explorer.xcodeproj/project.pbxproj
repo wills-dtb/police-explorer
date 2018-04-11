@@ -16,6 +16,9 @@
 		004C13682075F8CD00BA41C9 /* ResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004C135B2075F8CD00BA41C9 /* ResponseHandler.swift */; };
 		004C13692075F8CD00BA41C9 /* JSONResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004C135D2075F8CD00BA41C9 /* JSONResponseHandler.swift */; };
 		004C136A2075F8CD00BA41C9 /* Clients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004C135E2075F8CD00BA41C9 /* Clients.swift */; };
+		0065B74E207E7C8400839865 /* CrimeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0065B74D207E7C8400839865 /* CrimeDetailViewController.swift */; };
+		0065B750207E7C9900839865 /* CrimeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0065B74F207E7C9900839865 /* CrimeDetailView.swift */; };
+		0065B752207E80E200839865 /* Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AA155207566D900D51A17 /* Accessibility.swift */; };
 		00E309C92075FFB9004B8193 /* PoliceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E309C82075FFB9004B8193 /* PoliceAPI.swift */; };
 		00E309CB20760014004B8193 /* StreetLevelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E309CA20760014004B8193 /* StreetLevelAPI.swift */; };
 		00E309E1207605EE004B8193 /* Police_Explorer_UI_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E309E0207605EE004B8193 /* Police_Explorer_UI_Tests.swift */; };
@@ -65,6 +68,8 @@
 		004C135B2075F8CD00BA41C9 /* ResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseHandler.swift; sourceTree = "<group>"; };
 		004C135D2075F8CD00BA41C9 /* JSONResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONResponseHandler.swift; sourceTree = "<group>"; };
 		004C135E2075F8CD00BA41C9 /* Clients.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clients.swift; sourceTree = "<group>"; };
+		0065B74D207E7C8400839865 /* CrimeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrimeDetailViewController.swift; sourceTree = "<group>"; };
+		0065B74F207E7C9900839865 /* CrimeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrimeDetailView.swift; sourceTree = "<group>"; };
 		00E309C82075FFB9004B8193 /* PoliceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliceAPI.swift; sourceTree = "<group>"; };
 		00E309CA20760014004B8193 /* StreetLevelAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetLevelAPI.swift; sourceTree = "<group>"; };
 		00E309D0207605E1004B8193 /* Police Explorer Unit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Police Explorer Unit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -267,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				931AA14E207564A600D51A17 /* BaseViewController.swift */,
+				0065B74D207E7C8400839865 /* CrimeDetailViewController.swift */,
 				931AA1572075699000D51A17 /* CrimeTableViewController.swift */,
 				931AA15920756AC000D51A17 /* MainViewController.swift */,
 				931AA14C2075648300D51A17 /* MapViewController.swift */,
@@ -278,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				931AA150207564AE00D51A17 /* BaseView.swift */,
+				0065B74F207E7C9900839865 /* CrimeDetailView.swift */,
 				931AA15B20756AD200D51A17 /* MainView.swift */,
 				931AA1522075657700D51A17 /* MapView.swift */,
 			);
@@ -481,6 +488,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0065B752207E80E200839865 /* Accessibility.swift in Sources */,
 				00E309E1207605EE004B8193 /* Police_Explorer_UI_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,6 +501,7 @@
 				004C13632075F8CD00BA41C9 /* NetworkError.swift in Sources */,
 				00E309C92075FFB9004B8193 /* PoliceAPI.swift in Sources */,
 				004C13662075F8CD00BA41C9 /* EncodeURLParameters.swift in Sources */,
+				0065B74E207E7C8400839865 /* CrimeDetailViewController.swift in Sources */,
 				004C136A2075F8CD00BA41C9 /* Clients.swift in Sources */,
 				004C13682075F8CD00BA41C9 /* ResponseHandler.swift in Sources */,
 				004C13652075F8CD00BA41C9 /* AuthorizeRequest.swift in Sources */,
@@ -508,6 +517,7 @@
 				931AA1582075699000D51A17 /* CrimeTableViewController.swift in Sources */,
 				931AA15A20756AC000D51A17 /* MainViewController.swift in Sources */,
 				931AA15E2075785A00D51A17 /* StreetCrime.swift in Sources */,
+				0065B750207E7C9900839865 /* CrimeDetailView.swift in Sources */,
 				931AA156207566D900D51A17 /* Accessibility.swift in Sources */,
 				931AA14D2075648300D51A17 /* MapViewController.swift in Sources */,
 			);
