@@ -9,6 +9,9 @@ import Foundation
 
 struct Accessibility {
 
+    // CrimeDetail
+    static let CrimeDetailLabel = "CrimeDetailLabel"
+
     // CrimeTable
     static let CrimeTableCellPrefix = "CrimeTableCell - "
 

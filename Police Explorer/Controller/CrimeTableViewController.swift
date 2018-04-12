@@ -41,10 +41,22 @@ final class CrimeTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: CrimeTableViewController.reuseIdentifier, for: indexPath)
         let crime = crimes[indexPath.row]
 
-        cell.textLabel?.text = "\(crime.id): \(crime.category)"
+        cell.textLabel?.text = crime.description
         cell.accessibilityIdentifier = "\(Accessibility.CrimeTableCellPrefix)\(crime.id)"
+        cell.accessoryType = .disclosureIndicator
 
         return cell
+    }
+
+
+    // MARK: - UITableViewDelegate
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let crime = crimes[indexPath.row]
+
+        let crimeDetailController = CrimeDetailViewController(crime: crime)
+
+        show(crimeDetailController, sender: nil)
     }
     
 }
