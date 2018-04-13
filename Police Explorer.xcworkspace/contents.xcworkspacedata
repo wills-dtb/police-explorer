@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../../Downloads/tea_building.gpx">
+   </FileRef>
+   <FileRef
       location = "group:Police Explorer.xcodeproj">
    </FileRef>
    <FileRef
