@@ -21,3 +21,7 @@ end
 lane :tests do
   run_tests(scheme: "Police Explorer Unit Tests")
 end
+
+lane :ui-tests do
+  run_tests(scheme: "Police Explorer UI Tests")
+end
