@@ -1,0 +1,7 @@
+@missing_tests
+Given that the user is on the main screen
+And the table is populated with crime entries
+When the user scrolls down
+Then the view should change
+
+

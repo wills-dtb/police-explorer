@@ -1,0 +1,8 @@
+Given that a crime details cell is clicked
+When the new screen appears
+Then the user is on the crime details page
+
+@missing_tests
+Given that the user is on the crime details page
+When the crimes back button is clicked
+Then the user is back on the main screen

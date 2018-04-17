@@ -1,0 +1,20 @@
+@missing_tests
+Given that the screen is not north facing
+And the compass appears in the top right corner
+When the user clicks it
+Then the map becomes north facing
+
+@missing_tests
+Given that the user is on the main screen
+And clicks back from the crime details screen
+When back on main screen
+Then the map has not moved
+
+@missing_tests
+Given user is on main view
+When user double taps the screen
+Then the user zooms into the UK
+
+Given user has fully zoomed into map
+When the map has fully loaded
+Then crime details are loaded in the cells
