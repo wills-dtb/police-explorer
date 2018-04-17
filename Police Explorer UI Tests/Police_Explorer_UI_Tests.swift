@@ -44,5 +44,41 @@ class Police_Explorer_UI_Tests: XCTestCase {
         // Then
         XCTAssertNotNil(Accessibility.CrimeDetailLabel)
     }
+
+    func testBackNavigation() {
+
+        fullZoomIntoView()
+        app.tables.cells.element(boundBy: 0).tap()
+
+        // Given
+        XCTAssertTrue(app.staticTexts[Accessibility.CrimeDetailLabel].isEnabled)
+
+        // When
+        app.navigationBars["Crime Details"].buttons["Crimes"].tap()
+
+        // Then
+        XCTAssertTrue(app.navigationBars["Crimes"].exists, "The app is not on the home screen")
+
+    }
+
+    func testCrimeTableScrollView() {
+        fullZoomIntoView()
+        if (app.tables.cells.count > 8) {
+
+            // When
+            app.tables.cells.element(boundBy: 0).swipeUp()
+
+            // Then
+            XCTAssertFalse(app.tables.cells.element(boundBy: 0).isHittable)
+        }
+    }
+
+    private func fullZoomIntoView() {
+        repeat {
+            app.doubleTap()
+        } while !app.tables.cells.element(boundBy: 0).exists
+    }
+
+    
     
 }
