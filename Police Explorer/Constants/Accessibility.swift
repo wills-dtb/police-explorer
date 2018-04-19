@@ -18,4 +18,7 @@ struct Accessibility {
     // MapView
     static let MapViewContent = "MapViewContent"
 
+    // UnitedKingdom
+    static let UnitedKingdom = "United Kingdom"
+
 }

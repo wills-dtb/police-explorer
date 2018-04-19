@@ -23,6 +23,9 @@ final class MapView: BaseView {
         super.setup()
 
         contentView.showsUserLocation = true
+        
+        contentView.accessibilityIdentifier = "MyMapId"
+        contentView.isAccessibilityElement = true
 
         addSubview(contentView)
     }

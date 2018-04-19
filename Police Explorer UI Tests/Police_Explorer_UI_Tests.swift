@@ -73,6 +73,30 @@ class Police_Explorer_UI_Tests: XCTestCase {
         }
     }
 
+//    func testCompassOnMapBehaves() {
+//
+//        let query: XCUIElementQuery = app.maps
+//        let map: XCUIElement = query["MyMapId"]
+//
+//        let map: XCUIElement = app.maps.firstMatch
+//        let angle = angleInRadians(90)
+//
+//
+//        sleep(4)
+//
+//        XCTAssertTrue(map.exists)
+//
+//        map.rotate(angle, withVelocity: 1.0)
+//
+//        let button = app.buttons["Compass"]
+//        button.tap()
+//
+//    }
+//
+//    func angleInRadians(_ degrees: CGFloat) -> CGFloat {
+//        return CGFloat(90) * CGFloat.pi / 180
+//    }
+
     private func fullZoomIntoView() {
         repeat {
             app.doubleTap()

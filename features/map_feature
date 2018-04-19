@@ -1,3 +1,4 @@
+@manual_tests
 @missing_tests
 Given that the screen is not north facing
 And the compass appears in the top right corner
