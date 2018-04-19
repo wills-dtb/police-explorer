@@ -5,12 +5,14 @@ And the compass appears in the top right corner
 When the user clicks it
 Then the map becomes north facing
 
+@manual_tests
 @missing_tests
 Given that the user is on the main screen
 And clicks back from the crime details screen
 When back on main screen
 Then the map has not moved
 
+@manual_tests
 @missing_tests
 Given user is on main view
 When user double taps the screen

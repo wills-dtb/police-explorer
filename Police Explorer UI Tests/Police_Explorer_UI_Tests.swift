@@ -97,6 +97,21 @@ class Police_Explorer_UI_Tests: XCTestCase {
 //        return CGFloat(90) * CGFloat.pi / 180
 //    }
 
+//    func testUserInUKByDefault() {
+//
+//        let predicate = NSPredicate(format: "exists == 1")
+//        let query = app.otherElements[Accessibility.UnitedKingdom]
+//        expectation(for: predicate, evaluatedWith: query, handler: nil)
+//        waitForExpectations(timeout: 7, handler: nil)
+//
+//        // When
+//        app.doubleTap()
+//
+//        // Then
+//        let ukCities = app.descendants(matching: .valueIndicator).otherElements[Accessibility.UnitedKingdom]
+//        XCTAssert(ukCities.exists)
+//    }
+
     private func fullZoomIntoView() {
         repeat {
             app.doubleTap()
